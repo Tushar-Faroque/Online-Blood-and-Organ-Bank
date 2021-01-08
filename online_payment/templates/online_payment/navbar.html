@@ -1,8 +1,10 @@
+{% load static %}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <img src="{% static '/images/logo6.png' %}" alt="">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,7 +22,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#">Donate Blood</a>
                     <a class="dropdown-item" href="#">Ask For Blood</a>
-                    <a class="dropdown-item" href="#">Order an Online Blood Test</a>
+                    <a class="dropdown-item" href="blood_test">Order an Online Blood Test</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
