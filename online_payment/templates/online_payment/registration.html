@@ -1,5 +1,8 @@
+<title>Register</title>
+
 {% extends 'online_payment/index.html' %}
 {% load static %}
+
 
 {% block content %}
 
@@ -12,21 +15,21 @@
             <img src="{% static '/images/logo5.png' %}" alt="">
             <h3>Welcome</h3>
             <p>Online Blood & Organ Bank</p>
-            <form action="login">
+            <form action="login" class="d-flex justify-content-center form_container">
                 <input type="submit" value="Login" /><br>
             </form>
         </div>
         <div class="col-md-9 register-right">
-            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                <!-- <li class="nav-item">
+            <!-- <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                <li class="nav-item">
                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
                         aria-controls="home" aria-selected="true">Client</a>
-                </li> -->
-                <!-- <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
                         aria-controls="profile" aria-selected="false">Doctor</a>
-                </li> -->
-            </ul>
+                </li>
+            </ul> -->
             <form method="POST" action="">
                 {% csrf_token %}
                 <div class="tab-content" id="myTabContent">
@@ -34,26 +37,48 @@
                     <h3 class="register-heading">Register Here</h3>
                     <div class="row register-form">
                         <div class="col-md-6">
-                            <div class="form-group">
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
                                 {{form.username}}
                             </div>
-                            <div class="form-group">
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
                                 {{form.first_name}}
                             </div>
-                            <div class="form-group">
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
                                 {{form.last_name}}
                             </div>
-                            <div class="form-group">
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-at"></i></span>
+                                </div>
                                 {{form.email}}
                             </div>
+
+                            <p>{{ form.errors }}</p>
+
                         </div>
                         <div class="col-md-6">
-                            <div class="form-group">
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
                                 {{form.password1}}
                             </div>
-                            <div class="form-group">
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
                                 {{form.password2}}
                             </div>
+
                             <br><br><br>
                             <input type="submit" class="btnRegister" value="Register" />
                         </div>

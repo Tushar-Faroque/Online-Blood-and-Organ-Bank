@@ -1,43 +1,44 @@
+<title>Login</title>
+
 {% extends 'online_payment/index.html' %}
 {% load static %}
 
 {% block content %}
+
+
 <link rel="stylesheet" href="{% static '/css/login.css' %}">
 
-<div class="container login-container">
-    <div class="row">
-        <div class="col-md-6 login-form-1">
-            <h3>Login for Client</h3>
-            <form>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Your Email *" value="" />
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Your Password *" value="" />
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btnSubmit" value="Login" />
-                </div>
-                <div class="form-group">
-                    <a href="#" class="ForgetPwd">Forget Password?</a>
-                </div>
-            </form>
-        </div>
-        <div class="col-md-6 login-form-2">
-            <h3>Login for Doctor</h3>
-            <form>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Your Email *" value="" />
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Your Password *" value="" />
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btnSubmit" value="Login" />
-                </div>
-                <div class="form-group">
 
-                    <a href="#" class="ForgetPwd" value="Login">Forget Password?</a>
+<div class="container login-container">
+    <div class="d-flex justify-content-center form_container">
+        <div class="col-md-6 login-form-1">
+            <h3>Login</h3>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" name="username" placeholder="Username *" class="form-control">
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="password" name="password" placeholder="Password *" class="form-control">
+                </div>
+                <br>
+                <div class="d-flex justify-content-center form_container">
+                    <input type="submit" class="btnSubmit" value="Login" />
+                </div>
+
+                {% for message in messages %}
+                <p id="messages">{{ message }}</p>
+                {% endfor %}
+
+                <br>
+                <div class="d-flex justify-content-center form_container">
+                    Don't have an account? <a href="register" class="ml-2">Sign Up</a>
                 </div>
             </form>
         </div>

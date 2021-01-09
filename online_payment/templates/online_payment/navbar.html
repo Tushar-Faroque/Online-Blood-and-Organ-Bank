@@ -1,4 +1,13 @@
 {% load static %}
+
+<style>
+    .hello-msg {
+        font-size: 18px;
+        color: #fff;
+        margin-right: 20px;
+    }
+</style>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -56,4 +65,7 @@
             </li>
         </ul>
     </div>
+    <span class="hello-msg">Hello, {{request.user}}</span>
+    <!-- <span><a class="hello-msg" href="{% url 'logout' %}">Logout</a></span> -->
+    <span><a class="hello-msg" href="logout">Logout</a></span>
 </nav>
