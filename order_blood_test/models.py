@@ -1,8 +1,4 @@
 from django.db import models
-from django import forms
-from django.forms import ModelForm
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.models import User
 
 
 # Create your models here.
@@ -19,8 +15,8 @@ class BloodTest(models.Model):
 	date_created = models.DateTimeField(auto_now_add=True, null=True)
 	date = models.CharField(max_length=200, null=True)
 	time = models.CharField(max_length=200, null=True)
-	bkash = models.CharField(max_length=200, null=True)
-	trxid = models.CharField(max_length=200, null=True)
+	address = models.CharField(max_length=200, null=True)
+	nid = models.CharField(max_length=200, null=True)
 
 	def __str__(self):
 		"""

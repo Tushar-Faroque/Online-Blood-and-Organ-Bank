@@ -1,0 +1,60 @@
+<title>Home</title>
+
+{% extends 'homepage/index.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static '/css/home.css' %}">
+
+<div class='container-fluid mx-auto mt-5 mb-5 col-12' style="text-align: center">
+    <div class="hd">Why People Believe in Us</div>
+    <!-- <p><small class="text-muted">Always render more and better service than <br />is expected of you, no matter what
+            your ask may be.</small></p> -->
+    <br><br>
+    <div class="row" style="justify-content: center">
+        <div class="card col-md-3 col-12">
+            <div class="card-content">
+                <div class="card-body"> <img class="img" src="https://i.imgur.com/S7FJza5.png" />
+                    <div class="shadow"></div>
+                    <div class="card-title"> We're Cost Efficient </div>
+                    <div class="card-subtitle">
+                        <p> <small class="text-muted">People spend huge amount of money when in need of Blood and Organ.
+                                Here you can find them with a very cost effective way.
+                            </small> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col-md-3 col-12 ml-2">
+            <div class="card-content">
+                <div class="card-body"> <img class="img" src="https://i.imgur.com/xUWJuHB.png" />
+                    <div class="card-title"> We're On Spot </div>
+                    <div class="card-subtitle">
+                        <p> <small class="text-muted"> We have experts who can understand and help you
+                                with your problems and requirements </small> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col-md-3 col-12 ml-2">
+            <div class="card-content">
+                <div class="card-body"> <img class="img rck" src="https://i.imgur.com/rG3CGn3.png" />
+                    <div class="card-title"> We Guide you </div>
+                    <div class="card-subtitle">
+                        <p> <small class="text-muted">Getting or, Donating organ is a major task for anyone.
+                                Time and Money playes a vital role here. We guide you through the process so that you
+                                can be confident in getting the best service possible.</small> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ft">
+        <p class="chk"><small class="text-align">Still not sure?</small></p>
+        <div class="btn btn-primary">Read All Our Reviews</div>
+    </div>
+</div>
+
+{% endblock %}

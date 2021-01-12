@@ -47,19 +47,19 @@
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-append">
-                        <span class="input-group-text"><img src="./static/images/bkash.svg" alt=""></span>
+                        <span class="input-group-text"><i class="fas fa-address-card"></i></span>
                     </div>
-                    {{form.bkash}}
+                    {{form.address}}
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-append">
-                        <span class="input-group-text"><img src="./static/images/bkash.svg" alt=""></span>
+                        <span class="input-group-text"><i class="far fa-id-card"></i></span>
                     </div>
-                    {{form.trxid}}
+                    {{form.nid}}
                 </div>
                 <br>
                 <div class="d-flex justify-content-center form_container">
-                    <input type="submit" class="btnSubmit" value="Submit" />
+                    <input type="submit" class="btnSubmit" value="Proceed to Payment" />
                 </div>
 
                 {% for message in messages %}
@@ -83,8 +83,8 @@
     form_fields[3].placeholder = 'Phone *';
     form_fields[4].placeholder = 'Date * (DD-MM-YYYY)';
     form_fields[5].placeholder = 'Time * (9.00 AM/PM)';
-    form_fields[6].placeholder = 'bKash Mobile No. *';
-    form_fields[7].placeholder = 'Trxid *';
+    form_fields[6].placeholder = 'Address *';
+    form_fields[7].placeholder = 'NID *';
 
 
     for (var field in form_fields) {

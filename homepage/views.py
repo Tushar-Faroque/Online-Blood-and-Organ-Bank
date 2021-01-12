@@ -15,7 +15,14 @@ def home(request):
     """
     docstring
     """
+    return render(request, 'homepage/home.html')
+
+def index(request):
+    """
+    docstring
+    """
     return render(request, 'homepage/index.html')
+
 
 def login_page(request):
     """
