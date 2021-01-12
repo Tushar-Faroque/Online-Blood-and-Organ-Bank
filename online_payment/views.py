@@ -12,8 +12,14 @@ from .forms import PaymentForm
 @login_required(login_url='login')
 def payment(request):
     """
-    docstring
-    """
+    This method will create a payment request and upon successfull payment,
+    it will send an confirmation email to the user.
+    This method will only load this page if the user is logged in.
+
+	:param name: request - used to generate responses(Http) depending on the request that it receives.
+	:param type: HttpResponse
+	:return: returns payment page
+	"""
     template = render_to_string('online_payment/email_template.html', {'name': request.user.first_name})
 
     email_message = EmailMessage(
