@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import COM
+from .models import GetORGAN
 
 # Register your models here.
-admin.site.register(COM)
+admin.site.register(GetORGAN)

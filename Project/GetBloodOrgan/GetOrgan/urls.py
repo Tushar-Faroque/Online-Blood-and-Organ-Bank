@@ -1,8 +1,8 @@
+from django.urls import path
+from . import views
 
-
-from django.urls import path,include
-from .views import organlist
 urlpatterns = [
-   
-     path('organlist/',);
+    """path('payment', views.payment, name='payment'), """
+    path('organlist/',);
 ]
+
