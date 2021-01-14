@@ -1,0 +1,126 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <title>ASK FOR ORGAN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+        integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="/static/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/get_organ.css">
+
+
+    <link rel="icon" href="./static/images/logo5.png" type="image/x-icon">
+
+    <title>ASK FOR ORGAN</title>
+
+</head>
+
+<body>
+    
+
+    <h1>Get organ</h1>
+
+    <div>
+        {% block content %}
+
+
+
+        
+        <p>
+            <div class="container">
+                <h2>Filterable Table</h2>
+                <p>Type something in the input field to search the table for first names, last names or emails:</p>  
+                <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <br>
+            
+
+                <div class = ""col-md-7>
+                    <h5>Organ Details</h5>
+                    <hr>
+                    <div class = "card card-body">
+                        <a class = "btn btn-primary btn-sm btn-block" href="">Create</a>
+                        <table class= "table table-sm">
+                            <thead>
+                                <tr>
+                                    
+                                    <th>No</th>
+                                    <th>Organ Name</th>
+                                    <th>Availability</th>
+                                    <th>Name</th>
+                                    <th>Donor's BG</th>
+                                    <th>Email</th>
+                                    <th>Address</th>
+                                    <th>Donation Date</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="myTable">
+                                <tr>
+                                  <td>1</td>
+                                  <td>Eye</td>
+                                  <td>1</td>
+                                  <td>Mim</td>
+                                  <td>A+</td>
+                                  <td>mim@gmail.com</td>
+                                  <td>mohammadpur</td>
+                                  <td>11/01/2021</td>
+                                  
+                                  <td><a href="GetOrgan/submission.html"> <button>ADD</button> </a></td>
+                                </tr>
+                              </tbody>
+                            
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+        </p>
+
+        
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+     
+{% endblock %}
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
