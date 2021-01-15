@@ -5,6 +5,8 @@ import sys
 
 
 def main():
+
+    """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'online_blood_and_organ_bank.settings')
     try:
         from django.core.management import execute_from_command_line

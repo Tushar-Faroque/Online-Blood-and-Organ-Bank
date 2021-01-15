@@ -28,7 +28,7 @@ def organ(request):
         form = DonatorsDetailsForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            # return redirect('home')
 
     context = {'form': form}
     return render(request, 'DonateOrgan/donate_organ.html', context)

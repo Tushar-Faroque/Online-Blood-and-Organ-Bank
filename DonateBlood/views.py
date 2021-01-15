@@ -24,7 +24,7 @@ def blood(request):
         form = DonatorsDetailsForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            # return redirect('home')
 
     context = {'form': form}
     return render(request, 'DonateBlood/donate_blood.html', context)
