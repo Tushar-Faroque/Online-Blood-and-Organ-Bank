@@ -10,11 +10,10 @@ from .forms import DonatorsDetailsForm
 # Create your views here.
 
 
+
+
+
 def organ(request):
-    return render(request, 'DonateOrgan/donate_organ.html')
-
-
-def submission(request):
     """
     This method will submit the data from the user of organ,
     it will send an confirmation to the user like your request added successfully.
@@ -29,7 +28,7 @@ def submission(request):
         form = DonatorsDetailsForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('payment')
+            return redirect('home')
 
     context = {'form': form}
-    return render(request, 'DonateOrgan/submit1.html', context)
+    return render(request, 'DonateOrgan/donate_organ.html', context)
