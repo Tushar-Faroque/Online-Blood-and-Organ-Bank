@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homepage package &#8212; Online-Blood-and-Organ-Bank  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="homepage-package">
+<h1>homepage package<a class="headerlink" href="#homepage-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="homepage.migrations.html">homepage.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="homepage.migrations.html#module-homepage.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-homepage.admin">
+<span id="homepage-admin-module"></span><h2>homepage.admin module<a class="headerlink" href="#module-homepage.admin" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-homepage.apps">
+<span id="homepage-apps-module"></span><h2>homepage.apps module<a class="headerlink" href="#module-homepage.apps" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="homepage.apps.HomepageConfig">
+<em class="property">class </em><code class="sig-prename descclassname">homepage.apps.</code><code class="sig-name descname">HomepageConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_name</span></em>, <em class="sig-param"><span class="n">app_module</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/homepage/apps.html#HomepageConfig"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#homepage.apps.HomepageConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+<dl class="py attribute">
+<dt id="homepage.apps.HomepageConfig.name">
+<code class="sig-name descname">name</code><em class="property"> = 'homepage'</em><a class="headerlink" href="#homepage.apps.HomepageConfig.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-homepage.forms">
+<span id="homepage-forms-module"></span><h2>homepage.forms module<a class="headerlink" href="#module-homepage.forms" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="homepage.forms.SignUpForm">
+<em class="property">class </em><code class="sig-prename descclassname">homepage.forms.</code><code class="sig-name descname">SignUpForm</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/homepage/forms.html#SignUpForm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#homepage.forms.SignUpForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.forms.UserCreationForm</span></code></p>
+<p>This class takes UserCreationForm module structure from django
+and creates userdefined fileds</p>
+<dl class="py class">
+<dt id="homepage.forms.SignUpForm.Meta">
+<em class="property">class </em><code class="sig-name descname">Meta</code><a class="reference internal" href="_modules/homepage/forms.html#SignUpForm.Meta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#homepage.forms.SignUpForm.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="homepage.forms.SignUpForm.Meta.fields">
+<code class="sig-name descname">fields</code><em class="property"> = ['username', 'first_name', 'last_name', 'email', 'password1', 'password2']</em><a class="headerlink" href="#homepage.forms.SignUpForm.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="homepage.forms.SignUpForm.Meta.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#homepage.forms.SignUpForm.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.models.User</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="homepage.forms.SignUpForm.base_fields">
+<code class="sig-name descname">base_fields</code><em class="property"> = {'email': &lt;django.forms.fields.EmailField object&gt;, 'first_name': &lt;django.forms.fields.CharField object&gt;, 'last_name': &lt;django.forms.fields.CharField object&gt;, 'password1': &lt;django.forms.fields.CharField object&gt;, 'password2': &lt;django.forms.fields.CharField object&gt;, 'username': &lt;django.forms.fields.CharField object&gt;}</em><a class="headerlink" href="#homepage.forms.SignUpForm.base_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="homepage.forms.SignUpForm.declared_fields">
+<code class="sig-name descname">declared_fields</code><em class="property"> = {'password1': &lt;django.forms.fields.CharField object&gt;, 'password2': &lt;django.forms.fields.CharField object&gt;}</em><a class="headerlink" href="#homepage.forms.SignUpForm.declared_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="homepage.forms.SignUpForm.media">
+<em class="property">property </em><code class="sig-name descname">media</code><a class="headerlink" href="#homepage.forms.SignUpForm.media" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-homepage.models">
+<span id="homepage-models-module"></span><h2>homepage.models module<a class="headerlink" href="#module-homepage.models" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-homepage.tests">
+<span id="homepage-tests-module"></span><h2>homepage.tests module<a class="headerlink" href="#module-homepage.tests" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-homepage.urls">
+<span id="homepage-urls-module"></span><h2>homepage.urls module<a class="headerlink" href="#module-homepage.urls" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-homepage.views">
+<span id="homepage-views-module"></span><h2>homepage.views module<a class="headerlink" href="#module-homepage.views" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="homepage.views.home">
+<code class="sig-prename descclassname">homepage.views.</code><code class="sig-name descname">home</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/homepage/views.html#home"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#homepage.views.home" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method will load the homepage</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param name</dt>
+<dd class="field-odd"><p>request - used to generate responses(Http) depending on the request that it receives.</p>
+</dd>
+<dt class="field-even">param type</dt>
+<dd class="field-even"><p>HttpResponse</p>
+</dd>
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>returns the homepage</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt id="homepage.views.index">
+<code class="sig-prename descclassname">homepage.views.</code><code class="sig-name descname">index</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/homepage/views.html#index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#homepage.views.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method will load the index page</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param name</dt>
+<dd class="field-odd"><p>request - used to generate responses(Http) depending on the request that it receives.</p>
+</dd>
+<dt class="field-even">param type</dt>
+<dd class="field-even"><p>HttpResponse</p>
+</dd>
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>returns the index page</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt id="homepage.views.login_page">
+<code class="sig-prename descclassname">homepage.views.</code><code class="sig-name descname">login_page</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/homepage/views.html#login_page"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#homepage.views.login_page" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method will load the login page and take the required information to log in.
+If the user is already authenticated then it will redirect the user to homepage.
+Else, it will take the required information to authenticate.
+If the infromation is right then it will redirect the user to homepage.
+If the infromation is worng then it will give an error message and ask for the username and password again.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param name</dt>
+<dd class="field-odd"><p>request - used to generate responses(Http) depending on the request that it receives.</p>
+</dd>
+<dt class="field-even">param type</dt>
+<dd class="field-even"><p>HttpResponse</p>
+</dd>
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>returns the homepage if authenticated else, ask for information to login.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt id="homepage.views.logout_page">
+<code class="sig-prename descclassname">homepage.views.</code><code class="sig-name descname">logout_page</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/homepage/views.html#logout_page"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#homepage.views.logout_page" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method will execute the logout page and redirect the user to login page.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param name</dt>
+<dd class="field-odd"><p>request - used to generate responses(Http) depending on the request that it receives.</p>
+</dd>
+<dt class="field-even">param type</dt>
+<dd class="field-even"><p>HttpResponse</p>
+</dd>
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>returns the login page.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt id="homepage.views.register">
+<code class="sig-prename descclassname">homepage.views.</code><code class="sig-name descname">register</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/homepage/views.html#register"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#homepage.views.register" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method will load the registration page and take the required information to register as a new user.
+If the user is already authenticated then it will redirect the user to homepage.
+Else, it will take the required information to register.
+If the infromation is right then it will redirect the user to login with a message.
+If the infromation is worng then it will ask for the proper information again.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param name</dt>
+<dd class="field-odd"><p>request - used to generate responses(Http) depending on the request that it receives.</p>
+</dd>
+<dt class="field-even">param type</dt>
+<dd class="field-even"><p>HttpResponse</p>
+</dd>
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>returns the homepage if authenticated else, ask for information to register.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</div>
+<div class="section" id="module-homepage">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-homepage" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Online-Blood-and-Organ-Bank</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Tushar.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/homepage.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

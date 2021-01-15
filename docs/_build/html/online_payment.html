@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>online_payment package &#8212; Online-Blood-and-Organ-Bank  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="online-payment-package">
+<h1>online_payment package<a class="headerlink" href="#online-payment-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="online_payment.migrations.html">online_payment.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="online_payment.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="online_payment.migrations.html#module-online_payment.migrations.0001_initial">online_payment.migrations.0001_initial module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="online_payment.migrations.html#module-online_payment.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-online_payment.admin">
+<span id="online-payment-admin-module"></span><h2>online_payment.admin module<a class="headerlink" href="#module-online_payment.admin" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-online_payment.apps">
+<span id="online-payment-apps-module"></span><h2>online_payment.apps module<a class="headerlink" href="#module-online_payment.apps" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="online_payment.apps.OnlinePaymentConfig">
+<em class="property">class </em><code class="sig-prename descclassname">online_payment.apps.</code><code class="sig-name descname">OnlinePaymentConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_name</span></em>, <em class="sig-param"><span class="n">app_module</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/online_payment/apps.html#OnlinePaymentConfig"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#online_payment.apps.OnlinePaymentConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+<dl class="py attribute">
+<dt id="online_payment.apps.OnlinePaymentConfig.name">
+<code class="sig-name descname">name</code><em class="property"> = 'online_payment'</em><a class="headerlink" href="#online_payment.apps.OnlinePaymentConfig.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-online_payment.forms">
+<span id="online-payment-forms-module"></span><h2>online_payment.forms module<a class="headerlink" href="#module-online_payment.forms" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="online_payment.forms.PaymentForm">
+<em class="property">class </em><code class="sig-prename descclassname">online_payment.forms.</code><code class="sig-name descname">PaymentForm</code><span class="sig-paren">(</span><em class="sig-param">data=None</em>, <em class="sig-param">files=None</em>, <em class="sig-param">auto_id='id_%s'</em>, <em class="sig-param">prefix=None</em>, <em class="sig-param">initial=None</em>, <em class="sig-param">error_class=&lt;class 'django.forms.utils.ErrorList'&gt;</em>, <em class="sig-param">label_suffix=None</em>, <em class="sig-param">empty_permitted=False</em>, <em class="sig-param">instance=None</em>, <em class="sig-param">use_required_attribute=None</em>, <em class="sig-param">renderer=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/online_payment/forms.html#PaymentForm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#online_payment.forms.PaymentForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.forms.models.ModelForm</span></code></p>
+<blockquote>
+<div><p>This class takes a helper class ModelForm that</p>
+</div></blockquote>
+<p>lets you create a Form class from a Django model.</p>
+<dl class="py class">
+<dt id="online_payment.forms.PaymentForm.Meta">
+<em class="property">class </em><code class="sig-name descname">Meta</code><a class="reference internal" href="_modules/online_payment/forms.html#PaymentForm.Meta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#online_payment.forms.PaymentForm.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="online_payment.forms.PaymentForm.Meta.fields">
+<code class="sig-name descname">fields</code><em class="property"> = '__all__'</em><a class="headerlink" href="#online_payment.forms.PaymentForm.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="online_payment.forms.PaymentForm.Meta.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#online_payment.forms.PaymentForm.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#online_payment.models.Payment" title="online_payment.models.Payment"><code class="xref py py-class docutils literal notranslate"><span class="pre">online_payment.models.Payment</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="online_payment.forms.PaymentForm.base_fields">
+<code class="sig-name descname">base_fields</code><em class="property"> = {'address': &lt;django.forms.fields.CharField object&gt;, 'amount': &lt;django.forms.fields.CharField object&gt;, 'bkash': &lt;django.forms.fields.CharField object&gt;, 'email': &lt;django.forms.fields.CharField object&gt;, 'name': &lt;django.forms.fields.CharField object&gt;, 'phone': &lt;django.forms.fields.CharField object&gt;, 'trxid': &lt;django.forms.fields.CharField object&gt;}</em><a class="headerlink" href="#online_payment.forms.PaymentForm.base_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="online_payment.forms.PaymentForm.declared_fields">
+<code class="sig-name descname">declared_fields</code><em class="property"> = {}</em><a class="headerlink" href="#online_payment.forms.PaymentForm.declared_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="online_payment.forms.PaymentForm.media">
+<em class="property">property </em><code class="sig-name descname">media</code><a class="headerlink" href="#online_payment.forms.PaymentForm.media" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-online_payment.models">
+<span id="online-payment-models-module"></span><h2>online_payment.models module<a class="headerlink" href="#module-online_payment.models" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="online_payment.models.Payment">
+<em class="property">class </em><code class="sig-prename descclassname">online_payment.models.</code><code class="sig-name descname">Payment</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/online_payment/models.html#Payment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#online_payment.models.Payment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="simple">
+<dt>This class contains the essential fields and behaviors of the data you’re storing. </dt><dd><p>Each model maps to a single database table.</p>
+</dd>
+</dl>
+<p>This class is used to create a database table containg those attributes.</p>
+<dl class="py exception">
+<dt id="online_payment.models.Payment.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#online_payment.models.Payment.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="online_payment.models.Payment.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#online_payment.models.Payment.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="online_payment.models.Payment.address">
+<code class="sig-name descname">address</code><a class="headerlink" href="#online_payment.models.Payment.address" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="online_payment.models.Payment.amount">
+<code class="sig-name descname">amount</code><a class="headerlink" href="#online_payment.models.Payment.amount" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="online_payment.models.Payment.bkash">
+<code class="sig-name descname">bkash</code><a class="headerlink" href="#online_payment.models.Payment.bkash" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="online_payment.models.Payment.date_created">
+<code class="sig-name descname">date_created</code><a class="headerlink" href="#online_payment.models.Payment.date_created" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="online_payment.models.Payment.email">
+<code class="sig-name descname">email</code><a class="headerlink" href="#online_payment.models.Payment.email" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="online_payment.models.Payment.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#online_payment.models.Payment.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="online_payment.models.Payment.name">
+<code class="sig-name descname">name</code><a class="headerlink" href="#online_payment.models.Payment.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="online_payment.models.Payment.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#online_payment.models.Payment.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="online_payment.models.Payment.phone">
+<code class="sig-name descname">phone</code><a class="headerlink" href="#online_payment.models.Payment.phone" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="online_payment.models.Payment.trxid">
+<code class="sig-name descname">trxid</code><a class="headerlink" href="#online_payment.models.Payment.trxid" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-online_payment.tests">
+<span id="online-payment-tests-module"></span><h2>online_payment.tests module<a class="headerlink" href="#module-online_payment.tests" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-online_payment.urls">
+<span id="online-payment-urls-module"></span><h2>online_payment.urls module<a class="headerlink" href="#module-online_payment.urls" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-online_payment.views">
+<span id="online-payment-views-module"></span><h2>online_payment.views module<a class="headerlink" href="#module-online_payment.views" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="online_payment.views.payment">
+<code class="sig-prename descclassname">online_payment.views.</code><code class="sig-name descname">payment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/online_payment/views.html#payment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#online_payment.views.payment" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method will create a payment request and upon successfull payment,
+it will send an confirmation email to the user.
+This method will only load this page if the user is logged in.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param name</dt>
+<dd class="field-odd"><p>request - used to generate responses(Http) depending on the request that it receives.</p>
+</dd>
+<dt class="field-even">param type</dt>
+<dd class="field-even"><p>HttpResponse</p>
+</dd>
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>returns payment page</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</div>
+<div class="section" id="module-online_payment">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-online_payment" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Online-Blood-and-Organ-Bank</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Tushar.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/online_payment.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
