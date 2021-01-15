@@ -7,15 +7,17 @@ from django.template.loader import render_to_string
 
 from .forms import DonatorsDetailsForm
 
-# Create your views here.
-
-
-# def blood(request):
-#     return render(request, 'DonateBlood/donate_blood.html')
 
 
 def blood(request):
-        
+    """
+    This method will create a blood from request from the user,
+    it will send an confirmation to the user like your request added successfully.
+    This method will only load this page if the user is logged in.
+	:param name: request - used to generate responses(Http) depending on the request that it receives.
+	:param type: HttpResponse
+	:return: returns payment page
+	"""
     form = DonatorsDetailsForm()
 
     if request.method == 'POST':

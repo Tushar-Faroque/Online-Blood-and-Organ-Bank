@@ -15,7 +15,14 @@ def organ(request):
 
 
 def submission(request):
-        
+    """
+    This method will submit the data from the user of organ,
+    it will send an confirmation to the user like your request added successfully.
+    This method will only load this page if the user is logged in.
+	:param name: request - used to generate responses(Http) depending on the request that it receives.
+	:param type: HttpResponse
+	:return: returns payment page
+	"""      
     form = DonatorsDetailsForm()
 
     if request.method == 'POST':
