@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'online_blood_and_organ_bank.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'online_blood_and_organ_bank.settings') # chnage here
 
 application = get_asgi_application()

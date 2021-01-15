@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'online_blood_and_organ_bank.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'online_blood_and_organ_bank.settings') # change here
 
 application = get_wsgi_application()

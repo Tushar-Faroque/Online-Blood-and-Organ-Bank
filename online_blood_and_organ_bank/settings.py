@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'online_blood_and_organ_bank.urls'
+ROOT_URLCONF = 'online_blood_and_organ_bank.urls' # change here
 
 TEMPLATES = [
     {
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'online_blood_and_organ_bank.wsgi.application'
+WSGI_APPLICATION = 'online_blood_and_organ_bank.wsgi.application' # change here
 
 
 # Database
