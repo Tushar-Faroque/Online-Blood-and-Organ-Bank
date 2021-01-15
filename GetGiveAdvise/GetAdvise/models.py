@@ -10,8 +10,8 @@ class  ConsultWithDoctor(models.Model):
     """
 	pname = models.CharField(max_length=200, null=True)
 	pemail = models.CharField(max_length=200, null=True)
-	pid = models.CharField(max_length=200, null=True)
-	bloodgroup = models.CharField(max_length=1200, null=True)
+	p_id = models.CharField(max_length=200, null=True)
+	message = models.CharField(max_length=1200, null=True)
 	
 
 	def __str__(self):

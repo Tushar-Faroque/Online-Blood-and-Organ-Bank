@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class  Doctor(models.Model):
 	"""
     This class contains the essential fields and behaviors of the data you’re storing. 
@@ -10,7 +11,7 @@ class  Doctor(models.Model):
     """
 	Dname = models.CharField(max_length=200, null=True)
 	Demail = models.CharField(max_length=200, null=True)
-	Did = models.CharField(max_length=200, null=True)
+	D_id = models.CharField(max_length=200, null=True)
 	advise = models.CharField(max_length=1200, null=True)
 	
 
