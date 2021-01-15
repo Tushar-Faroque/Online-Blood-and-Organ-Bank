@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'DonateBloodOrgan.urls'
+ROOT_URLCONF = 'online_blood_and_organ_bank.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'DonateBloodOrgan.wsgi.application'
+WSGI_APPLICATION = 'online_blood_and_organ_bank.wsgi.application'
 
 
 # Database

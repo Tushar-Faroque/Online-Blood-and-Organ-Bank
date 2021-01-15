@@ -5,7 +5,7 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DonateBloodOrgan.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'online_blood_and_organ_bank.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
