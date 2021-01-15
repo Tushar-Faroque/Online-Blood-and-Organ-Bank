@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DonateBlood package &#8212; online_blood_and_organ_bank 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="donateblood-package">
+<h1>DonateBlood package<a class="headerlink" href="#donateblood-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="DonateBlood.migrations.html">DonateBlood.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="DonateBlood.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DonateBlood.migrations.html#module-DonateBlood.migrations.0001_initial">DonateBlood.migrations.0001_initial module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DonateBlood.migrations.html#module-DonateBlood.migrations.0002_auto_20210115_2124">DonateBlood.migrations.0002_auto_20210115_2124 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DonateBlood.migrations.html#module-DonateBlood.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-DonateBlood.admin">
+<span id="donateblood-admin-module"></span><h2>DonateBlood.admin module<a class="headerlink" href="#module-DonateBlood.admin" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-DonateBlood.apps">
+<span id="donateblood-apps-module"></span><h2>DonateBlood.apps module<a class="headerlink" href="#module-DonateBlood.apps" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="DonateBlood.apps.DonatebloodConfig">
+<em class="property">class </em><code class="sig-prename descclassname">DonateBlood.apps.</code><code class="sig-name descname">DonatebloodConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_name</span></em>, <em class="sig-param"><span class="n">app_module</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DonateBlood/apps.html#DonatebloodConfig"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DonateBlood.apps.DonatebloodConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+<dl class="py attribute">
+<dt id="DonateBlood.apps.DonatebloodConfig.name">
+<code class="sig-name descname">name</code><em class="property"> = 'DonateBlood'</em><a class="headerlink" href="#DonateBlood.apps.DonatebloodConfig.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-DonateBlood.forms">
+<span id="donateblood-forms-module"></span><h2>DonateBlood.forms module<a class="headerlink" href="#module-DonateBlood.forms" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="DonateBlood.forms.DonatorsDetailsForm">
+<em class="property">class </em><code class="sig-prename descclassname">DonateBlood.forms.</code><code class="sig-name descname">DonatorsDetailsForm</code><span class="sig-paren">(</span><em class="sig-param">data=None</em>, <em class="sig-param">files=None</em>, <em class="sig-param">auto_id='id_%s'</em>, <em class="sig-param">prefix=None</em>, <em class="sig-param">initial=None</em>, <em class="sig-param">error_class=&lt;class 'django.forms.utils.ErrorList'&gt;</em>, <em class="sig-param">label_suffix=None</em>, <em class="sig-param">empty_permitted=False</em>, <em class="sig-param">instance=None</em>, <em class="sig-param">use_required_attribute=None</em>, <em class="sig-param">renderer=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DonateBlood/forms.html#DonatorsDetailsForm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DonateBlood.forms.DonatorsDetailsForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.forms.models.ModelForm</span></code></p>
+<blockquote>
+<div><p>This class takes a helper class ModelForm that</p>
+</div></blockquote>
+<p>lets you create a Form class from a Django model.</p>
+<dl class="py class">
+<dt id="DonateBlood.forms.DonatorsDetailsForm.Meta">
+<em class="property">class </em><code class="sig-name descname">Meta</code><a class="reference internal" href="_modules/DonateBlood/forms.html#DonatorsDetailsForm.Meta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DonateBlood.forms.DonatorsDetailsForm.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="DonateBlood.forms.DonatorsDetailsForm.Meta.fields">
+<code class="sig-name descname">fields</code><em class="property"> = '__all__'</em><a class="headerlink" href="#DonateBlood.forms.DonatorsDetailsForm.Meta.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="DonateBlood.forms.DonatorsDetailsForm.Meta.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#DonateBlood.forms.DonatorsDetailsForm.Meta.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#DonateBlood.models.DonateBLOOD" title="DonateBlood.models.DonateBLOOD"><code class="xref py py-class docutils literal notranslate"><span class="pre">DonateBlood.models.DonateBLOOD</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="DonateBlood.forms.DonatorsDetailsForm.base_fields">
+<code class="sig-name descname">base_fields</code><em class="property"> = {'address_house': &lt;django.forms.fields.CharField object&gt;, 'bloodgroup': &lt;django.forms.fields.CharField object&gt;, 'email_address': &lt;django.forms.fields.CharField object&gt;, 'first_name': &lt;django.forms.fields.CharField object&gt;, 'phone_number': &lt;django.forms.fields.CharField object&gt;}</em><a class="headerlink" href="#DonateBlood.forms.DonatorsDetailsForm.base_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="DonateBlood.forms.DonatorsDetailsForm.declared_fields">
+<code class="sig-name descname">declared_fields</code><em class="property"> = {}</em><a class="headerlink" href="#DonateBlood.forms.DonatorsDetailsForm.declared_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="DonateBlood.forms.DonatorsDetailsForm.media">
+<em class="property">property </em><code class="sig-name descname">media</code><a class="headerlink" href="#DonateBlood.forms.DonatorsDetailsForm.media" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-DonateBlood.models">
+<span id="donateblood-models-module"></span><h2>DonateBlood.models module<a class="headerlink" href="#module-DonateBlood.models" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="DonateBlood.models.DonateBLOOD">
+<em class="property">class </em><code class="sig-prename descclassname">DonateBlood.models.</code><code class="sig-name descname">DonateBLOOD</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DonateBlood/models.html#DonateBLOOD"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DonateBlood.models.DonateBLOOD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="simple">
+<dt>This class contains the essential fields and behaviors of the data you’re storing. </dt><dd><p>Each model maps to a single database table.</p>
+</dd>
+</dl>
+<p>This class is used to create a database table containg those attributes.</p>
+<dl class="py exception">
+<dt id="DonateBlood.models.DonateBLOOD.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#DonateBlood.models.DonateBLOOD.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="DonateBlood.models.DonateBLOOD.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#DonateBlood.models.DonateBLOOD.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="DonateBlood.models.DonateBLOOD.address_house">
+<code class="sig-name descname">address_house</code><a class="headerlink" href="#DonateBlood.models.DonateBLOOD.address_house" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="DonateBlood.models.DonateBLOOD.bloodgroup">
+<code class="sig-name descname">bloodgroup</code><a class="headerlink" href="#DonateBlood.models.DonateBLOOD.bloodgroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="DonateBlood.models.DonateBLOOD.email_address">
+<code class="sig-name descname">email_address</code><a class="headerlink" href="#DonateBlood.models.DonateBLOOD.email_address" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="DonateBlood.models.DonateBLOOD.first_name">
+<code class="sig-name descname">first_name</code><a class="headerlink" href="#DonateBlood.models.DonateBLOOD.first_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="DonateBlood.models.DonateBLOOD.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#DonateBlood.models.DonateBLOOD.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="DonateBlood.models.DonateBLOOD.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#DonateBlood.models.DonateBLOOD.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="DonateBlood.models.DonateBLOOD.phone_number">
+<code class="sig-name descname">phone_number</code><a class="headerlink" href="#DonateBlood.models.DonateBLOOD.phone_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-DonateBlood.tests">
+<span id="donateblood-tests-module"></span><h2>DonateBlood.tests module<a class="headerlink" href="#module-DonateBlood.tests" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-DonateBlood.urls">
+<span id="donateblood-urls-module"></span><h2>DonateBlood.urls module<a class="headerlink" href="#module-DonateBlood.urls" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-DonateBlood.views">
+<span id="donateblood-views-module"></span><h2>DonateBlood.views module<a class="headerlink" href="#module-DonateBlood.views" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="DonateBlood.views.blood">
+<code class="sig-prename descclassname">DonateBlood.views.</code><code class="sig-name descname">blood</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/DonateBlood/views.html#blood"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#DonateBlood.views.blood" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method will create a blood from request from the user,
+it will send an confirmation to the user like your request added successfully.
+This method will only load this page if the user is logged in.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param name</dt>
+<dd class="field-odd"><p>request - used to generate responses(Http) depending on the request that it receives.</p>
+</dd>
+<dt class="field-even">param type</dt>
+<dd class="field-even"><p>HttpResponse</p>
+</dd>
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>returns payment page</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</div>
+<div class="section" id="module-DonateBlood">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-DonateBlood" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">online_blood_and_organ_bank</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Azmain.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/DonateBlood.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
