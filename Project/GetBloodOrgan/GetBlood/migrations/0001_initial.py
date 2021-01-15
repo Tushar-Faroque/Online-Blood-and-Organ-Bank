@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('email', models.CharField(max_length=200, null=True)),
                 ('address', models.CharField(max_length=1200, null=True)),
                 ('phone', models.CharField(max_length=200, null=True)),
-                ('needblood', models.CharField(max_length=200, null=True)),
+               # ('needblood', models.CharField(max_length=200, null=True)),
                
             ],
         ),

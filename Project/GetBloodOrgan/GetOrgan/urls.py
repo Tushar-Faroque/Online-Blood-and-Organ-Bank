@@ -3,8 +3,8 @@ from . import views
 
 urlpatterns = [
     path('organ/', views.organ),
-    path('submission/', views.submission) 
-    #path('submit', views.submission, name= 'submit')
+   # path('submission/', views.submission) 
+    path('submit', views.submission, name= 'submit')
    
 ]
 

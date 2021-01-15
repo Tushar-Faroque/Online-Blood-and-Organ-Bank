@@ -11,7 +11,7 @@ class GetORGAN(models.Model):
     email = models.CharField(max_length=200, null=True)
     address = models.CharField(max_length=1200, null=True)
     phone = models.CharField(max_length=200, null=True)
-    bloodtype = models.CharField(max_length=200, null=True)
+   # bloodtype = models.CharField(max_length=200, null=True)
     
 
 

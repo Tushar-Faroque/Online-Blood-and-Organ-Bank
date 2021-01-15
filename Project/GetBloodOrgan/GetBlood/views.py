@@ -14,7 +14,7 @@ def blood(request):
     return render(request, 'GetBlood/get_blood.html')
 
 
-def submission(request):
+def for_submission(request):
         
     form = CustomerDetailsForm()
 
@@ -25,5 +25,5 @@ def submission(request):
             return redirect('payment')
 
     context = {'form': form}
-    return render(request, 'GetBlood/submit.html', context)
+    return render(request, 'GetBlood/submit1.html', context)
 

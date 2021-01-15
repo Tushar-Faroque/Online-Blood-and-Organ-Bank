@@ -27,14 +27,13 @@
 
     <link rel="icon" href="./static/images/logo5.png" type="image/x-icon">
 
-    <title>ASK FOR ORGAN</title>
-
+   
 </head>
 
 <body>
     
 
-    <h1>Get organ</h1>
+    
 
     <div>
         {% block content %}
@@ -44,8 +43,8 @@
         
         <p>
             <div class="container">
-                <h2>Filterable Table</h2>
-                <p>Type something in the input field to search the table for first names, last names or emails:</p>  
+                <h2>Organ list</h2>
+                <p>Available organ list and details about the donators</p>  
                 <input class="form-control" id="myInput" type="text" placeholder="Search..">
             <br>
             
@@ -80,8 +79,9 @@
                                   <td>mim@gmail.com</td>
                                   <td>mohammadpur</td>
                                   <td>11/01/2021</td>
+                                  <td> <a href="{% url 'submit' %}"> <button>BUY</button></a> </td>
                                   
-                                  <td><a href="GetOrgan/submission.html"> <button>ADD</button> </a></td>
+                                  
                                 </tr>
                               </tbody>
                             
