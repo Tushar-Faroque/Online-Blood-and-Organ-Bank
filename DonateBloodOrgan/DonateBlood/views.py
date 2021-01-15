@@ -10,11 +10,11 @@ from .forms import DonatorsDetailsForm
 # Create your views here.
 
 
+# def blood(request):
+#     return render(request, 'DonateBlood/donate_blood.html')
+
+
 def blood(request):
-    return render(request, 'DonateBlood/donate_blood.html')
-
-
-def for_submission(request):
         
     form = DonatorsDetailsForm()
 
@@ -22,7 +22,7 @@ def for_submission(request):
         form = DonatorsDetailsForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('payment')
+            return redirect('home')
 
     context = {'form': form}
-    return render(request, 'DonateOrgan/submit1.html', context)
+    return render(request, 'DonateBlood/donate_blood.html', context)
