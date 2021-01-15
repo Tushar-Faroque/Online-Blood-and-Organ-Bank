@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class GetbloodadviseConfig(AppConfig):
-    name = 'GetBloodAdvise'
+class GetadviseConfig(AppConfig):
+    name = 'GetAdvise'
