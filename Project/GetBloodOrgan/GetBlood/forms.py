@@ -1,4 +1,5 @@
 from django.forms import ModelForm
+
 from .models import GetBLOOD
 
 class CustomerDetailsForm(ModelForm):

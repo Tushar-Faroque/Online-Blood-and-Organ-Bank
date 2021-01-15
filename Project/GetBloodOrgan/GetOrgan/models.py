@@ -18,7 +18,6 @@ class GetORGAN(models.Model):
 def __str__(self):
     """
 		This method will show the list as username in the django database Users table.
-		
 		:param name: self - used to access the attributes and methods of the class in python.
 		:param type: reference
 		:return: str

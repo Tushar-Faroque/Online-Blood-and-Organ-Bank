@@ -15,7 +15,14 @@ def blood(request):
 
 
 def for_submission(request):
-        
+    """
+    This method will create submission form request and after successfully adding user's info to form,
+    it will redirect to the payment page.
+    This method will only load this page if the user is logged in.
+	:param name: request - used to generate responses(Http) depending on the request that it receives.
+	:param type: HttpResponse
+	:return: returns payment page if the order is successful else, returns the submit page
+	""" 
     form = CustomerDetailsForm()
 
     if request.method == 'POST':
